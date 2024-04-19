@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>TacoLoco - Sign In</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '376287369922385');
+		fbq('track', 'PageView');
+	</script>
+	<!-- End Facebook Pixel Code -->
+	<style>
+		html {
+			margin-left: calc(100vw - 100%);
+			margin-right: 0;
+		}
+	</style>
+	<script type="text/javascript" src='//www.google.com/recaptcha/api.js?render=explicit' async defer></script>
+	<meta name="description" content="Log In to TacoLoco Advertiser panel to create campaigns with the highest quality push traffic" />
+	<link rel="canonical" href="https://my.tacolo.co/signin" />
+	<link rel="alternate" hreflang="x-default" href="https://my.tacolo.co/signin" />
+		<link rel="alternate" hreflang="en" href="https://my.tacolo.co/en" />
+		<link rel="alternate" hreflang="ru" href="https://my.tacolo.co/ru" />
+	<meta name="anti-csrf-token" content="CfDJ8EHguMx5FNJFiMvrdn4FRxX5kG3-4YtIP_ppDladUa9Lu6smFP5mGtq4kRuDZ3MvbGaPTL7jMr3-2UFRhVkhsfV3oMMcNk6s0CvLduVnjGCydfMLrHWzKiC2Y6nuFNw1nnHnovU-Jv1l-JTJMomX554" />
+
+	<!-- Google Tag Manager -->
+	<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-T3KQ96Q');</script>
+	<!-- End Google Tag Manager -->
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<script src="/dist/js/bootstrap.bundle.js?v=HX00_-RXGHNhKEhVQyDnw0mohbxbm4ifQoiip_7QLD4" type="text/javascript"></script>
+	<script src="/dist/js/style.bundle.js?v=R6-7qzu4PpU_IwLVLBAeqdFdCHYU6BYAOTEarHusR8A" type="text/javascript"></script>
+	<script src="/dist/js/vue.bundle.js?v=hTp81if8x98GBYqTe99v_PDMRSlPprX2dattL4nW3dA" type="text/javascript"></script>
+	<script src="/dist/js/icons.bundle.js?v=KvHVDkIH-xH-Mton4tcM-_lk5NJ25GMxgml5FUzKQ-0"></script>
+	<script src="/dist/js/MainScript.js?v=K21rsDS39HQ8I6I3xSAnJCu4KKZydmY7K6p8Pno11cM"></script>
+</head>
+<body>
+	
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3KQ96Q"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="container">
+	<div class="row d-flex justify-content-center">
+		<div class="card login-form">
+			<div class="card-header pt-4 bg-white border-0">
+				<div class="login-logo">
+					<a href="https://tacolo.co/"><img src="/img/login_logo_taco.png" alt="TacoLoco"></a>
+				</div>
+				<nav>
+					<ul id="nav-tab" class="nav nav-tabs nav-justified">
+						<li class="nav-item">
+							<a class="nav-link active" href="#advertiser" data-toggle="tab">
+								Advertiser
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://publisher.tacolo.co/signin">
+								Publisher
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="card-body pb-0">
+				<div id="nav-tabContent" class="tab-content" style="min-height: 200px;">
+					<div class="tab-pane fade active show" id="advertiser">
+						<div id="advertiserTab" v-cloak></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="d-none d-sm-flex row justify-content-center pt-3">
+		<div class="row text-center">
+			<span class="col-6">
+				<strong>Email:</strong>&nbsp;<a href="mailto:support@tacolo.co" style="color: inherit;text-decoration: inherit;">support@tacolo.co</a>
+			</span>
+			<span class="col-6 border-left">
+				<strong>Telegram:</strong>&nbsp;<a href="https://t.me/tacoloco_support" style="color: inherit;text-decoration: inherit;">@tacoloco_support</a>
+			</span>
+		</div>
+		<div class="col-12 text-center">
+			<strong>Skype:</strong>&nbsp;<a href="https://join.skype.com/invite/ktfqBoTAOgWR" style="color: inherit;text-decoration: inherit;">tacoloco_team@outlook.com</a>
+		</div>
+	</div>
+	<div class="d-flex d-sm-none row justify-content-center pt-3">
+		<div class="col-12 text-center">
+			<strong>Email:</strong>&nbsp;<a href="mailto:support@tacolo.co" style="color: inherit;text-decoration: inherit;">support@tacolo.co</a>
+		</div>
+		<div class="col-12 text-center">
+			<strong>Telegram:</strong>&nbsp;<a href="https://t.me/tacoloco_support" style="color: inherit;text-decoration: inherit;">@tacoloco_support</a>
+		</div>
+		<div class="col-12 text-center">
+			<strong>Skype:</strong>&nbsp;<a href="https://join.skype.com/invite/ktfqBoTAOgWR" style="color: inherit;text-decoration: inherit;">tacoloco_team@outlook.com</a>
+		</div>
+	</div>
+</div>
+<!-- Facebook Pixel Code (noscript) -->
+<noscript>
+	<img height="1" width="1" style="display:none"
+		 src="https://www.facebook.com/tr?id=376287369922385&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code (noscript) -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+		m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+		ym(57251008, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true
+		});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57251008" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+	window.getGoogleAnalyticsClientID = function () {
+		if (window.ga && window.ga.getAll) {
+			var track = window.ga.getAll().find(function (tracker) {
+				return tracker.get('trackingId') === 'UA-164244071-1';
+			});
+			if (track) {
+				return track.get('clientId');
+			}
+		}
+		return '';
+	};
+	window.googleReCaptchaSiteKey = '6LfS_a0UAAAAABt5d1_4_t08JlYI3WPNUEgOj4zR';
+	window.yandexMetrika = '57251008';
+	window.captchaEnabled = 'false';
+	window.captchaSignUpEnabled = 'false';
+	window.termsLink = 'https://tacolo.co/terms';
+	window.privacyLink = 'https://tacolo.co/privacy-policy';
+	window.path = '/signin';
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function (m, e, t, r, i, k, a) {
+	m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+		m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+	})
+		(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+	ym(55461766, "init", {
+		clickmap: true,
+		trackLinks: true,
+		accurateTrackBounce: true
+	});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55461766" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
+
+<script>
+	window.translation = {"Sign In":"Sign In","Log In to TacoLoco Advertiser panel to create campaigns with the highest quality push traffic":"Log In to TacoLoco Advertiser panel to create campaigns with the highest quality push traffic","Email":"Email","Password":"Password","Your e-mail is verified. Please login.":"Your e-mail is verified. Please login.","Your token is invalid. Please contact us.":"Your token is invalid. Please contact us.","Please check your email to activate your account.":"Please check your email to activate your account.","If you haven't received an activation email, check your spam folder.":"If you haven't received an activation email, check your spam folder.","If you still can't find the activation email, click":"If you still can't find the activation email, click","here":"here","to resend it.":"to resend it.","Don't have account?":"Don't have account?","Sign Up":"Sign Up","Forgot password?":"Forgot password?","Please enter your Email and try again.":"Please enter your Email and try again.","Please enter your Password and try again.":"Please enter your Password and try again.","Email or Password is incorrect. Please try again.":"Email or Password is incorrect. Please try again.","Previously we’ve detected frequent unsuccessful log in attempts. For security purposes please verify that you are not a robot.":"Previously we’ve detected frequent unsuccessful log in attempts. For security purposes please verify that you are not a robot.","Ensure you have entered CAPTCHA correctly.":"Ensure you have entered CAPTCHA correctly.","Your account has been disabled. Please contact support.":"Your account has been disabled. Please contact support.","Account not active yet. Please check your email to activate your account or contact us":"Account not active yet. Please check your email to activate your account or contact us","Account not active yet. Please check your email to activate your account or click":"Account not active yet. Please check your email to activate your account or click","to resend the activation email":"to resend the activation email","Log in":"Log in","Logging in...":"Logging in..."};
+</script>
+<script src="/dist/js/SignIn.js?v=p7I3HRyOYE_VUlglF16D8ONPb37iytOP_I9aWAqUt00" type="text/javascript"></script>
